@@ -14,7 +14,9 @@ const Main = ({ player, setPlayer, url }) => {
 
   useEffect(async () => {
     const response = await fetch(
-      `https://www.balldontlie.io/api/v1/players?search=${searchTerm}&per_page=24`
+      `https://www.balldontlie.io/api/v1/players?search=${searchTerm}&per_page=24${
+        searchTerm ? "" : "&page=120"
+      }`
     );
     const data = await response.json();
 
@@ -34,6 +36,7 @@ const Main = ({ player, setPlayer, url }) => {
             className="search"
             onChange={(e) => onChangeHandler(e.target.value)}
             value={searchTerm}
+            placeholder="Search for a player (e.g Lebron James)"
           />
         </form>
       </header>

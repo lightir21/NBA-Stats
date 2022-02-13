@@ -39,6 +39,11 @@ body {
   border-radius: 100px;
 }
 
+.search::placeholder {
+  color: #333;
+  font-style: inherit;
+}
+
 .main-container {
   margin: 1.6rem;
   display: flex;
