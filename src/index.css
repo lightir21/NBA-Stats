@@ -29,6 +29,10 @@ body {
 .header-title {
   font-size: 7.4rem;
   margin-top: 4.8rem;
+}
+
+.header-secondary-title {
+  font-size: 3.8rem;
   margin-bottom: 2.4rem;
 }
 

@@ -28,7 +28,10 @@ const Main = ({ player, setPlayer, url }) => {
   return (
     <>
       <header className="header">
-        <h1 className="header-title">NBA-STATS</h1>
+        <h1 className="header-title">NBA-STATUS</h1>
+        <h2 className="header-secondary-title">
+          NBA players statistics for season 21-22
+        </h2>
 
         <form>
           <input
